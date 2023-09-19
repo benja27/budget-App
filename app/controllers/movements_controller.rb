@@ -1,10 +1,10 @@
-class MovementsController < ApplicationController
-  before_action :authenticate_user!
+class MovementsController < ApplicationController  
   before_action :set_movement, only: %i[ show edit update destroy ]
 
   # GET /movements or /movements.json
   def index
     @movements = Movement.all
+    @movements = @movements.where(author_id: current_user.id)
   end
 
   # GET /movements/1 or /movements/1.json
@@ -14,6 +14,7 @@ class MovementsController < ApplicationController
   # GET /movements/new
   def new
     @movement = Movement.new
+    @groups = current_user.groups
   end
 
   # GET /movements/1/edit
@@ -23,6 +24,7 @@ class MovementsController < ApplicationController
   # POST /movements or /movements.json
   def create
     @movement = Movement.new(movement_params)
+    @movement.author_id = current_user.id
 
     respond_to do |format|
       if @movement.save
@@ -66,6 +68,6 @@ class MovementsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def movement_params
-      params.require(:movement).permit(:author_id, :name, :amount)
+      params.require(:movement).permit(:author_id, :name, :amount, :group_id)
     end
 end
