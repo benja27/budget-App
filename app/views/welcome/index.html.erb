@@ -1,0 +1,27 @@
+  <div class='text-center' >
+
+  <h1 class='pt-5' >Super Wallet</h1>
+
+  <h4 class='pt-5' >Control your financial management with intellegence spending insights</h4>
+
+  <div class='mb-3 pt-5' >
+    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success btn-lg" %>    
+  </div>
+
+  <div class='mb-3' >
+    <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-lg" %>
+  </div>
+
+  <h6 class='mb-3' >
+    Find us:
+  </h6>
+
+  <div>
+    <i class="fab fs-2 fa-facebook-square"></i> <!-- Icono de Facebook -->
+    <i class="fab fs-2 fa-instagram"></i> <!-- Icono de Instagram -->
+    <i class="fab fs-2 fa-twitter"></i> <!-- Icono de Twitter -->
+  </div>
+
+</div>
+
+<% render "shared/footer" %>

@@ -1,5 +1,5 @@
 class GroupsController < ApplicationController
-  # before_action :authenticate_user!
+  before_action :authenticate_user!
   before_action :set_group, only: %i[ show edit update destroy ]
 
   # GET /groups or /groups.json
@@ -19,6 +19,9 @@ class GroupsController < ApplicationController
   # GET /groups/new
   def new
     @group = Group.new
+  end
+
+  def welcome
   end
 
   # GET /groups/1/edit
