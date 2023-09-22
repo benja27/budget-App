@@ -1,5 +1,6 @@
 
-<div class='d-flex bg-primary py-3'> 
+<% if current_user %>
+  <div class='d-flex bg-primary py-3'> 
   <div class='w-100 d-flex flex-row-reverse container justify-content-between' >
     <div >
       <%=link_to groups_path, method: :get do%>
@@ -7,10 +8,20 @@
       <%end%>
     </div>  
     
-    <div class='d-flex align-items-center gap-3 text-white' >      
-      <%= button_to  destroy_user_session_path, method: :delete, class:"bg-primary text-white border border-0" do%>
-        <i class='fas fa-bars fs-2 bg-primary p-0 m-0 ' >  </i>
-      <%end%>
+    <div class='d-flex align-items-center gap-3 text-white cursor-pointer' >      
+        
+          <i class='fas fa-bars fs-2 bg-primary p-0 m-0 cursor-pointer' id="open-side-menu" >  </i>
+        
     </div>  
   </div>
 </div>
+
+<%else %>
+  <div class='w-100 bg-primary py-5' >
+    <div class='d-flex justify-content-center' >
+      <h1 class='text-white' >Budget-App</h1>
+    </div>
+  </div>
+
+<%end%>
+

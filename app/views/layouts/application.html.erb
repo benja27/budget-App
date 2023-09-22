@@ -22,8 +22,10 @@
         <%=render "shared/sideMenu" %>
       </span>
       <div class='flex-grow-1' >
-
-        <%= render "shared/navbar" %>
+        
+        
+          <%= render "shared/navbar" %>
+        
 
         <div class='d-flex container min-vh-100 justify-content-center m-auto'  >
           <%= yield %>    
@@ -39,4 +41,5 @@
     
 
   </body>
+  <%= javascript_include_tag "side_menu"  %>
 </html>

@@ -44,12 +44,23 @@
   left: 0;
   bottom: 0;
   top: 0;  
+  height: 100vh;
   color: white;
   z-index: 1000;
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  display: none;
+  position: fixed;
  }
 
  .side-menu hr {
   height: 5px;
   opacity: 1;
+ }
+
+ #open-side-menu {
+  cursor: pointer;
+ }
+
+ #close-side-menu {
+  cursor: pointer;
  }
