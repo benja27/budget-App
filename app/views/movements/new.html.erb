@@ -1,9 +1,31 @@
-<h1>New movement</h1>
+<div class='container d-flex flex-column  pt-5' >
 
-<%= render "form", movement: @movement %>
+  <div class='text-center' >
+    <i class='fas fa-car' > </i>
+  </div>
 
-<br>
+  <div class='text-center' >
+    <h1 class='pt-3' >Add New Movement</h1>
 
-<div>
-  <%= link_to "Back to movements", movements_path %>
+    <% if params[:id].present? %>      
+      <%= render "form", movement: @movement %>
+    <%else%>
+      <%= render "form", movement: @movement %>
+    <%end%>
+
+
+
+
+    <div  class='mb-3' >
+      <%= button_to "Back to movements", movements_path, class: "btn btn-success fs-5" %>
+    </div>
+
+  </div>
+
+
+
+
+
 </div>
+
+

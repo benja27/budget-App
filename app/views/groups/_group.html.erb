@@ -1,19 +1,36 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
 
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= group.user_id %>
-  </p>
-
+<div id="<%= dom_id group %>" class='d-flex justify-content-between align-items-center' >
+  
+  <%=link_to group_path(group) do%>      
+    <i class="fas <%=group.icon%> " data-icon="fa-check" style="width:100px, height: 100px" ></i>
+  <%end%>
   
 
+  <div class='w-100 p-3' >
+    <div class='d-flex justify-content-between align-items-center' >
+
+      <%=link_to group_path(group), class: "text-decoration-none" do  %>
+
+      <div class='w-100 d-fle' >
+        <h4 class='' >
+          <%= group.name %>     
+        </h4>
+        <h6>
+          <%= group.created_at.to_formatted_s(:long) %>   
+        </h6>                
+      </div>   
+      <%end%>
+
+      <div class='w-50 p-3 text-end' >
+        <h4>
+          Total: <%= group.movements.sum(:amount) %>
+        </h4>              
+
+        <%= button_to "Delete Group", group, method: :delete, class: "bg-transparent border border-0 p-0", style: "z-index: 999" %>
+        
+      </div>
+    </div>  
+  </div>
+
 </div>
+

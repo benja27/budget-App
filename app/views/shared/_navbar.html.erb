@@ -1,21 +1,16 @@
-<div class='d-flex justify-content-around py-4' > 
-  <div>
-    <%=link_to "home", groups_path%>
+
+<div class='d-flex bg-primary py-3'> 
+  <div class='w-100 d-flex flex-row-reverse container justify-content-between' >
+    <div >
+      <%=link_to groups_path, method: :get do%>
+      <i class="fas fa-arrow-left border border-white p-1 rounded-circle  text-white" style="font-size: 35px; " ></i>
+      <%end%>
+    </div>  
+    
+    <div class='d-flex align-items-center gap-3 text-white' >      
+      <%= button_to  destroy_user_session_path, method: :delete, class:"bg-primary text-white border border-0" do%>
+        <i class='fas fa-bars fs-2 bg-primary p-0 m-0 ' >  </i>
+      <%end%>
+    </div>  
   </div>
-
-  <div>
-    <%=link_to "create new movement", new_movement_path %>
-  </div>
-
-  <div>
-    <%= link_to "create a new group", new_group_path  %>
-  </div>
-
-  <% if user_signed_in? %>
-  <div>
-    <%= button_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
-  </div>
-<% end %>
-
-
 </div>

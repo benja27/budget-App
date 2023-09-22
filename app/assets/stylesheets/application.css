@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+ .check,
+ .check * {
+  border: 1px solid black;
+ }
+
+ .fas {
+  font-size: 80px;
+ }
+
+ .selected {
+  background-color: red;
+ }
+
+ #icon-picker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 200px;
+  overflow-y: scroll;
+ }
+
+ #icon-picker i{
+  padding: 5px;  
+ }
