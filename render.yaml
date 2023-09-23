@@ -1,6 +1,6 @@
 databases: 
   -name : postgres
-   ipAllowList: []
+   ipAllowList: ""
 
 servides:
   -type: web
