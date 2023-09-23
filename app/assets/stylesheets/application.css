@@ -14,6 +14,11 @@
  *= require_self
  */
 
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+
+
  .check,
  .check * {
   border: 1px solid black;
@@ -62,4 +67,18 @@
 
  #close-side-menu {
   cursor: pointer;
+ }
+
+ .bg-success {
+  background-color: #28a745 !important;  
+  border: none
+ }
+
+ .bg-primary {
+  background-color: #007bff !important;  
+ }
+
+ .nice_font {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
  }

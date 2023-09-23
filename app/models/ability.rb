@@ -1,15 +1,11 @@
-# frozen_string_literal: true
-
 class Ability
   include CanCan::Ability
 
   def initialize(user)
-
-    user ||= User.new 
+    user ||= User.new
 
     can :read, Group, user_id: user.id
 
-    
 
 
     # Define abilities for the user here. For example:
