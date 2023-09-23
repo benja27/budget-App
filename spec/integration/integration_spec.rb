@@ -1,7 +1,6 @@
 require 'rails_helper'
 require 'capybara/rspec'
 
-
 RSpec.describe 'Users', type: :request do
   include Devise::Test::IntegrationHelpers
 
@@ -12,7 +11,6 @@ RSpec.describe 'Users', type: :request do
   before do
     sign_in(user)
   end
-
 
   it 'visit the index page' do
     sign_out(user)

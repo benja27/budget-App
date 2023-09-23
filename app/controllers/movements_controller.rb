@@ -2,7 +2,6 @@ class MovementsController < ApplicationController
   before_action :set_movement, only: %i[show edit update destroy]
   before_action :authenticate_user!
 
-
   # GET /movements or /movements.json
   def index
     @movements = Movement.all
@@ -54,7 +53,6 @@ class MovementsController < ApplicationController
   # DELETE /movements/1 or /movements/1.json
   def destroy
     @movement.destroy
-
     respond_to do |format|
       format.html { redirect_to movements_url, notice: 'Movement was successfully destroyed.' }
       format.json { head :no_content }

@@ -5,9 +5,6 @@ class Ability
     user ||= User.new
 
     can :read, Group, user_id: user.id
-
-
-
     # Define abilities for the user here. For example:
     #
     #   return unless user.present?
