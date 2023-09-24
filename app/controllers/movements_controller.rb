@@ -13,8 +13,8 @@ class MovementsController < ApplicationController
 
   # GET /movements/new
   def new
-    @movement = Movement.new
     @groups = current_user.groups
+    @movement = Movement.new
     @group_id = params[:group_id]
   end
 
