@@ -33,7 +33,7 @@
 
 
 
-# 📖 Awsome Books With React <a name="about-project"></a>
+# 📖 Budget App <a name="about-project"></a>
 
 **Budget APP** is a full stack app created with ruby on rails and postgresql
 
