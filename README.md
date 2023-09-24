@@ -35,7 +35,7 @@
 
 # 📖 Awsome Books With React <a name="about-project"></a>
 
-**Awsome Books With React** is a... Describe your project in 1 or 2 sentences.
+**Budget APP** is a full stack app created with ruby on rails and postgresql
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,7 +44,19 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">Ruby</a></li>
+  </ul>
+</details>
+<details>
+  <summary>Back-end</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">Rails</a></li>
+  </ul>
+</details>
+<details>
+  <summary>Database</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">Postgresql</a></li>
   </ul>
 </details>
 
@@ -54,18 +66,15 @@
 
 <!-- > Describe between 1-3 key features of the application. -->
 
-- **[Use Create React APP]**
-- **[Use React Routes]**
-- **[Use React Redux]**
+- **[It is a website specially design for moviles]**
+- **[It has a database included on real time]**
+- **[It uses Ruby on rails for the front end and back end]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Coming soon...
-<!-- - [Live Demo Link](https://google.com) -->
+- [Live Demo Link](https://www.loom.com/share/57d6cfa621f547c5affaf3e0d3c73aa6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,57 +83,49 @@ Coming soon...
 ## 💻 Getting Started <a name="getting-started"></a>
 
 
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need :
 Install this:
-Node js
+Ruby
+Rails
 Visual Studio Code
 Git
-
+Postgresql
 
 
 ### Setup
 
 Clone this repository to your desired folder:
-and a open a new terminal on your visual studio code
-
-
-  
+and a open a new terminal on your visual studio code  
 
 ### Install
 
 Install this project with:
-npm install
-
-
-
-
+bundle install
 
 ### Usage
 
 To run the project, execute the following command:
-npm run start
+Go to the file called /config/database.yml 
+and change the name, password and host of the database
+use the proper information from your local instalation of postgresql
 
+then run:
 
+rails db:create db:migrate
 
+then run:
 
-
+rails S
 
 
 ### Run tests
 
 To run tests, run the following command:
-npm run test
-
-
-
-
-
-
+rspec
 
 ### Deployment
 
@@ -157,8 +158,8 @@ I recomend Render since is easy to use
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Improve user interface]**
-- [ ] **[Improve Js code]**
-- [ ] **[Implement conexion to a database]**
+- [ ] **[Improve Ruby code]**
+- [ ] **[Implement more interactivy]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
