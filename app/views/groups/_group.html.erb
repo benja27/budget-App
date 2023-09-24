@@ -16,15 +16,15 @@
           <%= group.name %>     
         </h4>
         <h6>
-          <%= group.created_at.to_formatted_s(:long) %>   
+          <%= group.created_at.strftime("%d %b de %Y") %>   
         </h6>                
       </div>   
       <%end%>
 
       <div class='w-50 p-3 text-end' >
-        <h4>
+        <h6>
           Total: <%= group.movements.sum(:amount) %>
-        </h4>              
+        </h6>              
 
         <%= button_to "Delete Group", group, method: :delete, class: "bg-transparent border border-0 p-0", style: "z-index: 999" %>
         
