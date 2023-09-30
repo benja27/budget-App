@@ -12,7 +12,7 @@ class GroupsController < ApplicationController
   def show
     # if params[:id].to_i
     @group = Group.find(params[:id])
-    
+
     # else
     @movements = @group.movements
     @total_amount = @movements.sum(:amount)

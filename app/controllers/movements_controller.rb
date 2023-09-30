@@ -17,7 +17,7 @@ class MovementsController < ApplicationController
     @groups = current_user.groups
 
     @group = Group.find(params[:group_id])
-    @movement =  @group.movements.new
+    @movement = @group.movements.new
 
     @group_id = params[:group_id]
   end
@@ -58,7 +58,7 @@ class MovementsController < ApplicationController
   # DELETE /movements/1 or /movements/1.json
   def destroy
     @group = Group.find(params[:group_id])
-    @movement = @group.movements.find(params[:id])     
+    @movement = @group.movements.find(params[:id])
 
 
     @movement.destroy
