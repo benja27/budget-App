@@ -9,6 +9,8 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
+log/
+log/development.log
 /tmp/*
 !/log/.keep
 !/tmp/.keep
@@ -29,3 +31,4 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+log/development.log
