@@ -26275,3 +26275,12 @@ Started GET "/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 15:5
   
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/fonts/fonts.css"):
   
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
