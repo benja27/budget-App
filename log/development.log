@@ -26236,3 +26236,42 @@ ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%
   
 ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
   
+Started DELETE "/users/sign_out" for ::1 at 2023-09-30 14:43:33 -0600
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 32ms (ActiveRecord: 3.6ms | Allocations: 6493)
+
+
+Started GET "/" for ::1 at 2023-09-30 14:43:36 -0600
+Processing by WelcomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 651)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.2ms | Allocations: 798)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 291)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 66.1ms | Allocations: 19983)
+Completed 200 OK in 83ms (Views: 73.7ms | ActiveRecord: 0.0ms | Allocations: 22517)
+
+
+Started GET "/" for ::1 at 2023-09-30 15:53:59 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (Duration: 6.2ms | Allocations: 128)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 599)
+  Rendered shared/_sideMenu.html.erb (Duration: 20.7ms | Allocations: 798)
+  Rendered shared/_navbar.html.erb (Duration: 9.8ms | Allocations: 291)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 236.2ms | Allocations: 20322)
+Completed 200 OK in 3912ms (Views: 245.1ms | ActiveRecord: 0.0ms | Allocations: 49155)
+
+
+Started GET "/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 15:54:07 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/fonts/fonts.css"):
+  
