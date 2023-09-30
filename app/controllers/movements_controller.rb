@@ -60,7 +60,6 @@ class MovementsController < ApplicationController
     @group = Group.find(params[:group_id])
     @movement = @group.movements.find(params[:id])
 
-
     @movement.destroy
     respond_to do |format|
       format.html { redirect_to group_url(@group), notice: 'Movement was successfully destroyed.' }
