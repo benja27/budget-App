@@ -83,4 +83,21 @@ RSpec.describe Group, type: :model do
     @group2 = build(:group, icon: @group.icon, user: @group.user)
     expect(@group2).to_not be_valid
   end
+
+  it 'is valid with a duplicate name and different icon for different users' do
+    @group2 = build(:group, name: @group.name)
+    expect(@group2).to be_valid
+  end
+
+  it 'is valid with a duplicate icon and different name for different users' do
+    @group2 = build(:group, icon: @group.icon)
+    expect(@group2).to be_valid
+  end
+
+  it 'is not valid with a name with invalid characters' do
+    @group.name = 'a@'
+    expect(@group).to_not be_valid
+  end
+
+  
 end
