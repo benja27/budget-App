@@ -27249,3 +27249,24 @@ ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%
   
 ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
   
+Started GET "/groups" for ::1 at 2023-09-30 16:16:27 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.4ms | Allocations: 1108)
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 2.5ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3092)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 8022)
+Completed 200 OK in 33ms (Views: 26.3ms | ActiveRecord: 0.8ms | Allocations: 10738)
+
+
