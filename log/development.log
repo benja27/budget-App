@@ -26236,3 +26236,38 @@ ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%
   
 ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
   
+Started GET "/groups" for ::1 at 2023-09-30 16:08:10 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (2.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (1.8ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 93.1ms | Allocations: 6056)
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 1.8ms | Allocations: 1100)
+  Rendered groups/index.html.erb within layouts/application (Duration: 142.9ms | Allocations: 11410)
+  Rendered shared/_sideMenu.html.erb (Duration: 18.6ms | Allocations: 790)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 329)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 1210.6ms | Allocations: 62562)
+Completed 200 OK in 1908ms (Views: 1244.5ms | ActiveRecord: 13.6ms | Allocations: 371687)
+
+
+Started GET "/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 16:08:13 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
