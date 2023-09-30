@@ -1,14 +1,19 @@
-<p style="color: green"><%= notice %></p>
+<div class='chec' >
+  <p style="color: green"><%= notice %></p>
 
-<h1>Movements</h1>
+  <h1>Movements</h1>
 
-<div id="movements">
-  <% @movements.each do |movement| %>
-    <%= render movement %>
-    <p>
-      <%= link_to "Show this movement", movement %>
-    </p>
-  <% end %>
+  <div id="movements">
+    <% @movements.each do |movement| %>
+      <%= render movement %>
+      <p>
+        <%= link_to "Show this movement", group_movement_path(id: @group.id) %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New movement", new_group_movement_path %>
 </div>
 
-<%= link_to "New movement", new_movement_path %>
+
+

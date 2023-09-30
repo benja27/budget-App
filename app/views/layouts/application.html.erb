@@ -16,25 +16,27 @@
 
 
   
-  <body style="d-flexf justify-content-center  bg-succes"  >
+  <body style="d-flexf justify-content-center  bg-success"  >
 
-    <div class='d-flex' >
-      <span class='position-absolute side-menu bg-primary' id="side-menu" >
-        <%=render "shared/sideMenu" %>
-      </span>
-      <div class='flex-grow-1' >
-        
-        
-          <%= render "shared/navbar" %>
-        
+    <div class='d-flex col-12 col-sm-10 col-md-8 col-lg-6 mx-auto' >
+      
 
-        <div class='d-flex container min-vh-100 justify-content-center m-auto'  >
+      <div class='flex-grow-1 bg-dar min-vh-100 d-flex flex-column justify-content-between position-relative' >        
+        
+        <span class='position-absolute side-menu bg-primary' id="side-menu" >
+          <%=render "shared/sideMenu" %>
+        </span>
+
+        <%= render "shared/navbar" %>        
+
+        <div class='flex-grow-1 containe bg-light'  >
           <%= yield %>    
         </div>
 
         <%=render "shared/footer" %>    
       
       </div>
+
     </div>
 
   </body>

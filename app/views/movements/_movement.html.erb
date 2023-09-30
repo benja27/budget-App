@@ -17,9 +17,12 @@
 
     <div class=' text-center' style="width: 100px" >
       <h6 class='m-0 p-0' >
-        <%= movement.amount %>
-      </h6>
-      <%=button_to "delete movement", movement, method: :delete, class: "bg-transparent border-0 "   %>
+        $<%= movement.amount %>
+      </h6>          
+      
+      <%= button_to "Delete", group_movement_path(@group, movement), method: :delete, class: "bg-transparent border-0" %>
+
+
     </div>  
   </div>    
     

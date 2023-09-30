@@ -5,6 +5,7 @@ class MovementsController < ApplicationController
   # GET /movements or /movements.json
   def index
     @movements = Movement.all
+    @group = Group.find(params[:group_id])
     @movements = @movements.where(author_id: current_user.id)
   end
 
@@ -14,7 +15,10 @@ class MovementsController < ApplicationController
   # GET /movements/new
   def new
     @groups = current_user.groups
-    @movement = Movement.new
+
+    @group = Group.find(params[:group_id])
+    @movement =  @group.movements.new
+
     @group_id = params[:group_id]
   end
 
@@ -23,12 +27,13 @@ class MovementsController < ApplicationController
 
   # POST /movements or /movements.json
   def create
-    @movement = Movement.new(movement_params)
+    @group = Group.find(params[:group_id])
+    @movement = @group.movements.new(movement_params)
     @movement.author_id = current_user.id
 
     respond_to do |format|
       if @movement.save
-        format.html { redirect_to groups_url(@movement), notice: 'Movement was successfully created.' }
+        format.html { redirect_to group_path(@group), notice: 'Movement was successfully created.' }
         format.json { render :show, status: :created, location: @movement }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -52,9 +57,13 @@ class MovementsController < ApplicationController
 
   # DELETE /movements/1 or /movements/1.json
   def destroy
+    @group = Group.find(params[:group_id])
+    @movement = @group.movements.find(params[:id])     
+
+
     @movement.destroy
     respond_to do |format|
-      format.html { redirect_to movements_url, notice: 'Movement was successfully destroyed.' }
+      format.html { redirect_to group_url(@group), notice: 'Movement was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

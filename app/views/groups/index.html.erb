@@ -1,10 +1,13 @@
-<div class='position-relative d-flex flex-column justify-content-between w-10 col-12 col-sm-12 col-md-12 col-lg-9' >
-  <div>
+<div class='position-relative test d-flex flex-column justify-content-between flex-grow-1 h-100 bg-dange' >
+
+  <div class='text-center' >
     <p style="color: green"><%= notice %></p>
 
-    <h1 class='text-center mb-4' >Budget-App</h1>
-    <h5 class='text-center' >Groups Information</h5>
+    <h3 class='text-center mb-4' >Budget-App</h3>
+    <h6 class='text-center' >Groups Information</h6>
+  </div>
 
+  <div>
     <% @groups.each do |group| %>    
 
           <div id="groups" class='d-flex flex-column shadow py-2 px-1 rounded mb-3' >
@@ -14,14 +17,10 @@
     <% end %>  
   </div>
 
-  <div style="bottom: 0px; left:0" class="position-fixe  w-100" >
-    <div class='text-center py-3' >
-      <%= button_to "New Group", new_group_path, class: "w-100 py-3 h3 bg-success text-white", method: 'get' %>
-    </div>
-
-    <div class='text-center py-3' >
-      <%= button_to "New Movement", new_movement_path, method: :get, class: "w-100 py-3 h3 bg-success text-white" %>
-    </div>
+  <div style="botom: 0px; left:0; button:0" class="position-fixe  w-100" >
+    <div class='text-center ' >
+      <%= button_to "New Group", new_group_path, class: "w-100 py-3 h-3 bg-success text-white", method: 'get' %>
+    </div>    
   </div>
 
 </div>
