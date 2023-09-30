@@ -33,7 +33,7 @@
 
 
 
-# 📖 Awsome Books With React <a name="about-project"></a>
+# 📖 Budget App <a name="about-project"></a>
 
 **Budget APP** is a full stack app created with ruby on rails and postgresql
 
@@ -73,11 +73,8 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
 - [Live Demo Link](https://rails-b6iy.onrender.com/)
 - [ video tutorial ](https://www.loom.com/share/57d6cfa621f547c5affaf3e0d3c73aa6)
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

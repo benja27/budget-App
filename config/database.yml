@@ -23,15 +23,12 @@ default: &default
   username: postgres
   password: 12345
   host: localhost
-
-
 development:
   <<: *default
   database: budget_App_development
   username: postgres
   password: 12345
   host: localhost
-
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
