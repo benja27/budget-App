@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+.check,
+.check * {
+  border: 1px solid black;
+}
+
+.fas {
+  font-size: 80px;
+}
+
+.selected {
+  background-color: red;
+}
+
+#icon-picker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+#icon-picker i {
+  padding: 5px;
+}
+
+.side-menu {
+  width: 300px;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  height: 100vh;
+  color: white;
+  z-index: 1000;
+  display: none;
+  position: fixed;
+}
+
+.side-menu hr {
+  height: 5px;
+  opacity: 1;
+}
+
+#open-side-menu {
+  cursor: pointer;
+}
+
+#close-side-menu {
+  cursor: pointer;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+  border: none;
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+.nice_font {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+}
+
+body {
+  font-family: 'Proxima nova', sans-serif;
+}

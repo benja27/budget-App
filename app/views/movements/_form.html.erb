@@ -1,0 +1,36 @@
+<%= form_with(model: movement) do |form| %>
+  <% if movement.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(movement.errors.count, "error") %> prohibited this movement from being saved:</h2>
+
+      <ul>
+        <% movement.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>  
+
+  <div class='mb-3' >    
+    <%= form.text_field :name, placeholder: "transaction name", class: "w-100 form-control" %>
+  </div>
+
+  
+
+  <div class='mb-3' >    
+    <%= form.text_field :amount, placeholder: "Amount", class: "w-100 form-control"  %>
+  </div>
+
+  <%if params[:id].present? %>    
+    <%= form.hidden_field :group_id, value: params[:id] %>
+  <%else%>
+    <div class='field mb-3 d-flex w-100 gap-4 justify-content-between form-control mb-3' >
+      <%=form.label :group_id%>
+      <%=form.collection_select :group_id, @groups, :id, :name, class: "w-100 flex-grow-1" %>
+    </div>
+  <%end%>  
+
+  <div class='mb-3' >
+    <%= form.submit class: "bg-success text-white w-100 h3 py-2 rounded border border-0" %>
+  </div>
+<% end %>

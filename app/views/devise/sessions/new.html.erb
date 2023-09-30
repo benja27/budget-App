@@ -1,0 +1,29 @@
+<div class='d-fle p-0 test m-0 w-100  mb-5' >
+  
+  <h1 class='text-center mt-5 pt-5 fw-bold ' >Log in</h1>
+
+  <div>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+      <div class="field mb-3">      
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Enter your email" %>
+      </div>
+
+      <div class="field mb-3">      
+        <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Enter your password" %>
+      </div>    
+
+      <div class="actions">
+        <%= f.submit "Log in", class: "btn btn-lg w-100 btn-success rounded fs-3" %>
+      </div>
+    <% end %>  
+  </div>
+  <div class='text-center mt-3' >
+    <%= render "devise/shared/links" %>  
+  </div>
+
+    <div class='text-center mt-3' >
+      <%=button_to "Back", welcome_path, class: "btn btn-lg bg-success text-white ", method: :get  %> 
+    </div>
+
+</div>

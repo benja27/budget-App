@@ -1,0 +1,43 @@
+<div class='pt-5  w-100 text-center' >
+
+  <h2>Sign up</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field mb-3">    
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control", placeholder: "Enter your name" %>
+  </div>
+
+  <div class="field">    
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Enter your Email" %>
+  </div>
+
+  <div class="field">    
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "password" %>
+  </div>
+
+  <div class="field mb-4">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "retype your password" %>
+  </div>
+
+  <div class="actions mb-4">
+    <%= f.submit "Sign up", class: "form-control bg-success text-white fs-3" %>
+    </div>
+  <% end %>
+
+  <div class='pb-3' >
+    Already have an account?
+    <%= render "devise/shared/links" %>  
+  </div>
+
+  <div>
+    <%=button_to "Back", welcome_path, class: "btn btn-lg bg-success text-white py-1", method: :get  %>
+  </div>
+
+</div>
+

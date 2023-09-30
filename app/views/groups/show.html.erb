@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<div class='chec pt-5 mt-5 w-100'  >   
+
+   <div class='text-center' >            
+      <h3> <%=@group.name%> Movements </h3>
+      <h3>Total: $ <%=@total_amount%>   </h3>
+   </div>
+
+   <div class='pt-5' >
+      <%@movements.each do |e|%>       
+         <%= render 'movements/movement', movement: e %>
+      <%end%>  
+   </div>
+
+   <% if params[:id].present? %>
+      <div class='pt-5' >
+         <%=link_to "New movement", new_movement_path(id: params[:id]), method: :get, class: "btn w-100 bg-success text-white py-3 h5"%>
+      </div>
+   <% else %>
+      <div class='pt-5' >
+         <%=button_to "New movement", new_movement_path, method: :get, class: "w-100 bg-success text-white py-3 h5"%>
+      </div>
+   <% end %>
+
+</div>

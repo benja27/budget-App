@@ -1,0 +1,31 @@
+<div class='position-relative d-flex flex-column justify-content-between w-10 col-12 col-sm-12 col-md-12 col-lg-9' >
+  <div>
+    <p style="color: green"><%= notice %></p>
+
+    <h1 class='text-center mb-4' >Budget-App</h1>
+    <h5 class='text-center' >Groups Information</h5>
+
+    <% @groups.each do |group| %>    
+
+          <div id="groups" class='d-flex flex-column shadow py-2 px-1 rounded mb-3' >
+            <%= render group %>            
+          </div>
+
+    <% end %>  
+  </div>
+
+  <div style="bottom: 0px; left:0" class="position-fixe  w-100" >
+    <div class='text-center py-3' >
+      <%= button_to "New Group", new_group_path, class: "w-100 py-3 h3 bg-success text-white", method: 'get' %>
+    </div>
+
+    <div class='text-center py-3' >
+      <%= button_to "New Movement", new_movement_path, method: :get, class: "w-100 py-3 h3 bg-success text-white" %>
+    </div>
+  </div>
+
+</div>
+
+
+
+
