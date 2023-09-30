@@ -87,6 +87,3 @@ gem 'faker', '~> 3.2'
 
   gem "capybara"
   gem "selenium-webdriver"
-
-end
-
