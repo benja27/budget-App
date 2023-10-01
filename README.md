@@ -75,7 +75,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://rails-b6iy.onrender.com/)
-- [ video tutorial ](https://www.loom.com/share/57d6cfa621f547c5affaf3e0d3c73aa6)
+- [ video tutorial ](https://www.loom.com/share/0dcca3000c3c41fb9f0cce5d002069a3)
 
 
 
