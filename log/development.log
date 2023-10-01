@@ -233,3 +233,1423 @@ ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%
   
 ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
   
+Started GET "/groups/6" for ::1 at 2023-09-30 18:23:21 -0600
+Started GET "/groups/6" for ::1 at 2023-09-30 18:23:21 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (1.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:75:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:14:in `show'
+  [1m[36mMovement Sum (2.1ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 2.9ms | Allocations: 305)
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 270)
+  Rendered groups/show.html.erb within layouts/application (Duration: 21.6ms | Allocations: 4620)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.6ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 11504)
+Completed 200 OK in 202ms (Views: 49.5ms | ActiveRecord: 24.2ms | Allocations: 23728)
+
+
+  [1m[36mGroup Load (3.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:75:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:14:in `show'
+  [1m[36mMovement Sum (2.1ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 2.1ms | Allocations: 281)
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered movements/_movement.html.erb (Duration: 0.7ms | Allocations: 270)
+  Rendered groups/show.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1799)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 6660)
+Completed 200 OK in 170ms (Views: 29.3ms | ActiveRecord: 22.6ms | Allocations: 29527)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:23:51 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.4ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (6.8ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.7ms | Allocations: 362)
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered movements/_movement.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 18.1ms | Allocations: 3982)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.5ms | Allocations: 381)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 53.9ms | Allocations: 22256)
+Completed 200 OK in 134ms (Views: 48.1ms | ActiveRecord: 42.9ms | Allocations: 36393)
+
+
+Started GET "/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:23:53 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started DELETE "/groups/6/movements/19" for ::1 at 2023-09-30 18:23:58 -0600
+Processing by MovementsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "group_id"=>"6", "id"=>"19"}
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:74:in `set_movement'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:60:in `destroy'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 AND "movements"."id" = $2 LIMIT $3[0m  [["group_id", 6], ["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:61:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+  [1m[36mMovement Destroy (1.0ms)[0m  [1m[31mDELETE FROM "movements" WHERE "movements"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+Redirected to http://localhost:3000/groups/6
+Completed 302 Found in 33ms (ActiveRecord: 3.2ms | Allocations: 6829)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:23:58 -0600
+Processing by GroupsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 282)
+  Rendered movements/_movement.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1433)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.6ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 6366)
+Completed 200 OK in 33ms (Views: 20.9ms | ActiveRecord: 1.2ms | Allocations: 10675)
+
+
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 18:24:14 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  Rendered movements/_form.html.erb (Duration: 12.4ms | Allocations: 694)
+  Rendered movements/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 868)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.5ms | Allocations: 376)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 61)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 5821)
+Completed 200 OK in 45ms (Views: 33.5ms | ActiveRecord: 0.7ms | Allocations: 9971)
+
+
+Started POST "/groups/6/movements" for ::1 at 2023-09-30 18:24:19 -0600
+Processing by MovementsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "movement"=>{"name"=>"asdfasdfasdfasdf", "amount"=>"50", "group_id"=>""}, "commit"=>"Create Movement", "group_id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:30:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mMovement Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "movements" WHERE LOWER("movements"."name") = LOWER($1) AND "movements"."group_id" = $2 LIMIT $3[0m  [["name", "asdfasdfasdfasdf"], ["group_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mMovement Create (1.2ms)[0m  [1m[32mINSERT INTO "movements" ("author_id", "group_id", "name", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["author_id", 1], ["group_id", 6], ["name", "asdfasdfasdfasdf"], ["amount", 50.0], ["created_at", "2023-10-01 00:24:19.557647"], ["updated_at", "2023-10-01 00:24:19.557647"]]
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+Redirected to http://localhost:3000/groups/6
+Completed 302 Found in 50ms (ActiveRecord: 9.4ms | Allocations: 8839)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:24:19 -0600
+Processing by GroupsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.5ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 281)
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 270)
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1793)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 6712)
+Completed 200 OK in 43ms (Views: 27.7ms | ActiveRecord: 1.5ms | Allocations: 11013)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:26:55 -0600
+  
+SyntaxError (C:/Users/123123/OneDrive/Microverse/modulo 5/week 5/budget-App/config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end' or dummy end
+    resources :movements only: [:edit, :update, :show, :de...
+                         ^~~~
+):
+  
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end' or dummy end
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end' or dummy end
+Started GET "/groups/6" for ::1 at 2023-09-30 18:27:05 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 361)
+  Rendered movements/_movement.html.erb (Duration: 0.4ms | Allocations: 270)
+  Rendered movements/_movement.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 9.6ms | Allocations: 4752)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4834)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 10.1ms | Allocations: 18860)
+
+
+  
+ActionView::Template::Error (undefined method `new_group_movement_path' for #<ActionView::Base:0x0000000002d988>):
+    16:    </div>
+    17: 
+    18:       <div class='' >
+    19:          <%=link_to "New movement", new_group_movement_path(group_id: params[:id]), method: :get, class: "btn w-100 bg-success text-white py-4 "%>
+    20:       </div>
+    21:    
+    22: 
+  
+app/views/groups/show.html.erb:19
+Started GET "/groups/6" for ::1 at 2023-09-30 18:32:40 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (2.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (3.9ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (1.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 1.0ms | Allocations: 361)
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 270)
+  Rendered movements/_movement.html.erb (Duration: 0.8ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 14.9ms | Allocations: 3952)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.8ms | Allocations: 1010)
+  Rendered layout layouts/application.html.erb (Duration: 115.1ms | Allocations: 21209)
+Completed 500 Internal Server Error in 346ms (ActiveRecord: 28.2ms | Allocations: 37323)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_group_path' for #<ActionView::Base:0x00000000033158>):
+    23:     
+    24:     <div class='side-menu-item d-flex align-items-center gap-4' >
+    25:       <i class='fas fa-plus-circle fs-4' ></i>
+    26:       <%=link_to "New Group", new_group_path, class: "text-white text-decoration-none" %>      
+    27:     </div>
+    28:     <hr class='w-100 m-0 p-0 mb-3'  >
+    29:     
+  
+app/views/shared/_sideMenu.html.erb:26
+app/views/layouts/application.html.erb:27
+Started GET "/groups/6" for ::1 at 2023-09-30 18:32:55 -0600
+  
+SyntaxError (C:/Users/123123/OneDrive/Microverse/modulo 5/week 5/budget-App/config/routes.rb:4: syntax error, unexpected `do' for block, expecting =>
+...date, :show, :destory], :new do    
+...                             ^~
+):
+  
+config/routes.rb:4: syntax error, unexpected `do' for block, expecting =>
+config/routes.rb:4: syntax error, unexpected `do' for block, expecting =>
+Started GET "/groups/6" for ::1 at 2023-09-30 18:33:15 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.7ms | Allocations: 361)
+  Rendered movements/_movement.html.erb (Duration: 0.4ms | Allocations: 270)
+  Rendered movements/_movement.html.erb (Duration: 0.3ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3981)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 381)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 62)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 22137)
+Completed 200 OK in 109ms (Views: 52.3ms | ActiveRecord: 23.3ms | Allocations: 36194)
+
+
+Started GET "/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:33:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups" for ::1 at 2023-09-30 18:33:21 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.9ms | Allocations: 1153)
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 2.7ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 3215)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 8120)
+Completed 200 OK in 39ms (Views: 30.8ms | ActiveRecord: 1.2ms | Allocations: 10829)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 18:33:23 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.1ms | Allocations: 1108)
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 2.7ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 3092)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.5ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 7952)
+Completed 200 OK in 35ms (Views: 26.5ms | ActiveRecord: 1.0ms | Allocations: 10667)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 18:33:25 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 4.1ms | Allocations: 1108)
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.3ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 3092)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 7952)
+Completed 200 OK in 34ms (Views: 26.7ms | ActiveRecord: 1.2ms | Allocations: 10667)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 18:33:26 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+Started GET "/groups" for ::1 at 2023-09-30 18:33:27 -0600
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.4ms | Allocations: 1112)
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 2.5ms | Allocations: 1102)
+  Rendered groups/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 3266)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.7ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 8233)
+Completed 200 OK in 34ms (Views: 26.1ms | ActiveRecord: 1.0ms | Allocations: 11132)
+
+
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 4.7ms | Allocations: 1108)
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 4.0ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 3092)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 7996)
+Completed 200 OK in 36ms (Views: 28.1ms | ActiveRecord: 1.2ms | Allocations: 10702)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:33:32 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.6ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 281)
+  Rendered movements/_movement.html.erb (Duration: 0.4ms | Allocations: 270)
+  Rendered movements/_movement.html.erb (Duration: 0.3ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1785)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 6650)
+Completed 200 OK in 39ms (Views: 24.1ms | ActiveRecord: 1.4ms | Allocations: 10948)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 18:33:35 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.2ms | Allocations: 1108)
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.8ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 3092)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 7952)
+Completed 200 OK in 33ms (Views: 26.2ms | ActiveRecord: 1.1ms | Allocations: 10646)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:33:39 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 281)
+  Rendered movements/_movement.html.erb (Duration: 0.4ms | Allocations: 270)
+  Rendered movements/_movement.html.erb (Duration: 0.3ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1785)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 6646)
+Completed 200 OK in 33ms (Views: 20.2ms | ActiveRecord: 1.2ms | Allocations: 10941)
+
+
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 18:33:41 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  Rendered movements/_form.html.erb (Duration: 0.5ms | Allocations: 1065)
+  Rendered movements/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1140)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1222)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms | Allocations: 5456)
+
+
+  
+ActionView::Template::Error (undefined method `group_movements_path' for #<ActionView::Base:0x00000000039af8>):
+    1: <%= form_with(model:  [ @group, @movement ] ) do |form| %>
+    2:   <% if movement.errors.any? %>
+    3:     <div style="color: red">
+    4:       <h2><%= pluralize(movement.errors.count, "error") %> prohibited this movement from being saved:</h2>
+  
+app/views/movements/_form.html.erb:1
+app/views/movements/new.html.erb:13
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 18:34:03 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  Rendered movements/_form.html.erb (Duration: 0.9ms | Allocations: 721)
+  Rendered movements/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 896)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 378)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 61)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 19048)
+Completed 200 OK in 78ms (Views: 39.4ms | ActiveRecord: 8.1ms | Allocations: 34409)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:34:05 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started POST "/groups/6/movements" for ::1 at 2023-09-30 18:34:14 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/groups/6/movements"):
+  
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 18:34:14 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  Rendered movements/_form.html.erb (Duration: 0.9ms | Allocations: 614)
+  Rendered movements/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 771)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.5ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 5667)
+Completed 200 OK in 29ms (Views: 19.3ms | ActiveRecord: 0.5ms | Allocations: 9083)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:34:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 18:34:42 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  Rendered movements/_form.html.erb (Duration: 1.0ms | Allocations: 721)
+  Rendered movements/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 896)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 378)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 61)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 19047)
+Completed 200 OK in 77ms (Views: 38.9ms | ActiveRecord: 8.4ms | Allocations: 34401)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:34:44 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started POST "/groups/6/movements" for ::1 at 2023-09-30 18:34:49 -0600
+Processing by MovementsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "movement"=>{"name"=>"nameaaaaaa", "amount"=>"12", "group_id"=>""}, "commit"=>"Create Movement", "group_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:30:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mMovement Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "movements" WHERE LOWER("movements"."name") = LOWER($1) AND "movements"."group_id" = $2 LIMIT $3[0m  [["name", "nameaaaaaa"], ["group_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mMovement Create (1.2ms)[0m  [1m[32mINSERT INTO "movements" ("author_id", "group_id", "name", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["author_id", 1], ["group_id", 6], ["name", "nameaaaaaa"], ["amount", 12.0], ["created_at", "2023-10-01 00:34:49.732773"], ["updated_at", "2023-10-01 00:34:49.732773"]]
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+Redirected to http://localhost:3000/groups/6
+Completed 302 Found in 31ms (ActiveRecord: 9.1ms | Allocations: 8949)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:34:49 -0600
+Processing by GroupsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 342)
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 269)
+  Rendered movements/_movement.html.erb (Duration: 0.7ms | Allocations: 270)
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2266)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.5ms | Allocations: 377)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 7267)
+Completed 200 OK in 39ms (Views: 26.0ms | ActiveRecord: 1.2ms | Allocations: 11987)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 18:34:55 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 2.9ms | Allocations: 1150)
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 2.6ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 3206)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 8066)
+Completed 200 OK in 31ms (Views: 24.1ms | ActiveRecord: 1.0ms | Allocations: 10785)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:34:58 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 281)
+  Rendered movements/_movement.html.erb (Duration: 0.3ms | Allocations: 269)
+  Rendered movements/_movement.html.erb (Duration: 0.3ms | Allocations: 270)
+  Rendered movements/_movement.html.erb (Duration: 0.3ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2145)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.6ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 7007)
+Completed 200 OK in 37ms (Views: 25.0ms | ActiveRecord: 1.1ms | Allocations: 11308)
+
+
+Started DELETE "/groups/6/movements/20" for ::1 at 2023-09-30 18:35:00 -0600
+Processing by MovementsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "group_id"=>"6", "id"=>"20"}
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:74:in `set_movement'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:60:in `destroy'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 AND "movements"."id" = $2 LIMIT $3[0m  [["group_id", 6], ["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:61:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+  [1m[36mMovement Destroy (0.7ms)[0m  [1m[31mDELETE FROM "movements" WHERE "movements"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+Redirected to http://localhost:3000/groups/6
+Completed 302 Found in 20ms (ActiveRecord: 2.2ms | Allocations: 6648)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:35:00 -0600
+Processing by GroupsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 281)
+  Rendered movements/_movement.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered movements/_movement.html.erb (Duration: 0.3ms | Allocations: 270)
+  Rendered groups/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1793)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 6665)
+Completed 200 OK in 33ms (Views: 20.7ms | ActiveRecord: 1.1ms | Allocations: 10954)
+
+
+Started DELETE "/groups/6/movements/24" for ::1 at 2023-09-30 18:35:01 -0600
+Processing by MovementsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "group_id"=>"6", "id"=>"24"}
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:74:in `set_movement'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:60:in `destroy'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 AND "movements"."id" = $2 LIMIT $3[0m  [["group_id", 6], ["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:61:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+  [1m[36mMovement Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movements" WHERE "movements"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+Redirected to http://localhost:3000/groups/6
+Completed 302 Found in 21ms (ActiveRecord: 2.0ms | Allocations: 6029)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:35:01 -0600
+Processing by GroupsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 281)
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1432)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 6302)
+Completed 200 OK in 34ms (Views: 20.9ms | ActiveRecord: 1.1ms | Allocations: 10617)
+
+
+Started DELETE "/groups/6/movements/25" for ::1 at 2023-09-30 18:35:02 -0600
+Processing by MovementsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "group_id"=>"6", "id"=>"25"}
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:74:in `set_movement'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:60:in `destroy'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 AND "movements"."id" = $2 LIMIT $3[0m  [["group_id", 6], ["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:61:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+  [1m[36mMovement Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movements" WHERE "movements"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movements_controller.rb:63:in `destroy'
+Redirected to http://localhost:3000/groups/6
+Completed 302 Found in 21ms (ActiveRecord: 2.0ms | Allocations: 6032)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 18:35:02 -0600
+Processing by GroupsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.6ms | Allocations: 281)
+  Rendered groups/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1072)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.5ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5933)
+Completed 200 OK in 33ms (Views: 20.5ms | ActiveRecord: 1.1ms | Allocations: 10239)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 18:35:04 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.3ms | Allocations: 1108)
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.1ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 3092)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 7953)
+Completed 200 OK in 35ms (Views: 27.0ms | ActiveRecord: 1.0ms | Allocations: 10695)
+
+
+Started DELETE "/groups/11" for ::1 at 2023-09-30 18:35:05 -0600
+  
+ActionController::RoutingError (No route matches [DELETE] "/groups/11"):
+  
+Started GET "/groups" for ::1 at 2023-09-30 18:35:05 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.4ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 4.1ms | Allocations: 1108)
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 2.8ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 3092)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.6ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 7996)
+Completed 200 OK in 34ms (Views: 26.9ms | ActiveRecord: 1.1ms | Allocations: 10715)
+
+
+Started GET "/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:35:06 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups" for ::1 at 2023-09-30 18:35:09 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.7ms | Allocations: 1108)
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.3ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 3092)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.5ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 7997)
+Completed 200 OK in 35ms (Views: 28.0ms | ActiveRecord: 1.1ms | Allocations: 10716)
+
+
+Started GET "/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:35:09 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups" for ::1 at 2023-09-30 18:35:20 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 10.2ms | Allocations: 3711)
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 2.5ms | Allocations: 1098)
+  Rendered groups/index.html.erb within layouts/application (Duration: 18.9ms | Allocations: 7050)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 368)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 25200)
+Completed 200 OK in 81ms (Views: 54.6ms | ActiveRecord: 7.1ms | Allocations: 33620)
+
+
+Started GET "/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:35:22 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started DELETE "/groups/11" for ::1 at 2023-09-30 18:35:24 -0600
+Processing by GroupsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"11"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:61:in `destroy'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 11]]
+  ↳ app/controllers/groups_controller.rb:61:in `destroy'
+  [1m[36mGroup Destroy (0.5ms)[0m  [1m[31mDELETE FROM "groups" WHERE "groups"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/groups_controller.rb:61:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:61:in `destroy'
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 19ms (ActiveRecord: 1.9ms | Allocations: 6925)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 18:35:24 -0600
+Processing by GroupsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 4.0ms | Allocations: 1108)
+  Rendered groups/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1904)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.3ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 6808)
+Completed 200 OK in 44ms (Views: 36.8ms | ActiveRecord: 0.7ms | Allocations: 9541)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 18:35:45 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 10.7ms | Allocations: 3747)
+  Rendered groups/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 5890)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 368)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 24040)
+Completed 200 OK in 77ms (Views: 50.5ms | ActiveRecord: 7.1ms | Allocations: 32448)
+
+
+Started GET "/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:35:47 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups" for ::1 at 2023-09-30 18:36:03 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (1.6ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 11.4ms | Allocations: 3711)
+  Rendered groups/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 5854)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.6ms | Allocations: 368)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 24004)
+Completed 200 OK in 77ms (Views: 49.1ms | ActiveRecord: 8.4ms | Allocations: 32439)
+
+
+Started GET "/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:36:06 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups/6" for ::1 at 2023-09-30 18:36:08 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.2ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.6ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.7ms | Allocations: 305)
+  Rendered groups/show.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3250)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 8155)
+Completed 200 OK in 37ms (Views: 22.2ms | ActiveRecord: 2.6ms | Allocations: 13054)
+
+
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 18:36:43 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  Rendered movements/_form.html.erb (Duration: 0.9ms | Allocations: 701)
+  Rendered movements/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 875)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 376)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 61)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 5829)
+Completed 200 OK in 29ms (Views: 20.1ms | ActiveRecord: 0.5ms | Allocations: 10044)
+
+
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 18:44:49 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (2.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/movements/_form.html.erb:26
+  Rendered movements/_form.html.erb (Duration: 175.0ms | Allocations: 13322)
+  Rendered movements/new.html.erb within layouts/application (Duration: 178.9ms | Allocations: 13822)
+  Rendered shared/_sideMenu.html.erb (Duration: 2.5ms | Allocations: 781)
+  Rendered shared/_navbar.html.erb (Duration: 12.6ms | Allocations: 321)
+  Rendered shared/_footer.html.erb (Duration: 6.8ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 221.6ms | Allocations: 20110)
+Completed 200 OK in 376ms (Views: 231.0ms | ActiveRecord: 13.0ms | Allocations: 27206)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 18:44:50 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 19:01:12 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (2.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/movements/_form.html.erb:23
+  Rendered movements/_form.html.erb (Duration: 154.9ms | Allocations: 11375)
+  Rendered movements/new.html.erb within layouts/application (Duration: 158.3ms | Allocations: 11875)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.0ms | Allocations: 781)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 321)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 181.0ms | Allocations: 18208)
+Completed 200 OK in 302ms (Views: 189.4ms | ActiveRecord: 12.8ms | Allocations: 25329)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 19:01:12 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 19:01:54 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/movements/_form.html.erb:23
+  Rendered movements/_form.html.erb (Duration: 34.5ms | Allocations: 1946)
+  Rendered movements/new.html.erb within layouts/application (Duration: 37.2ms | Allocations: 2446)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.2ms | Allocations: 781)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 321)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 60.5ms | Allocations: 8779)
+Completed 200 OK in 79ms (Views: 68.0ms | ActiveRecord: 1.0ms | Allocations: 12933)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 19:01:54 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 19:02:59 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/movements/_form.html.erb:24
+  Rendered movements/_form.html.erb (Duration: 34.2ms | Allocations: 1972)
+  Rendered movements/new.html.erb within layouts/application (Duration: 36.8ms | Allocations: 2475)
+  Rendered shared/_sideMenu.html.erb (Duration: 2.4ms | Allocations: 781)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 321)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 59.2ms | Allocations: 8808)
+Completed 200 OK in 82ms (Views: 66.3ms | ActiveRecord: 1.1ms | Allocations: 12979)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 19:03:00 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 19:04:09 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/movements/_form.html.erb:24
+  Rendered movements/_form.html.erb (Duration: 33.1ms | Allocations: 2148)
+  Rendered movements/new.html.erb within layouts/application (Duration: 36.2ms | Allocations: 2648)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.2ms | Allocations: 781)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 321)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 60.1ms | Allocations: 8981)
+Completed 200 OK in 81ms (Views: 67.8ms | ActiveRecord: 0.9ms | Allocations: 13125)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 19:04:10 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 19:05:58 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/movements/_form.html.erb:24
+  Rendered movements/_form.html.erb (Duration: 32.9ms | Allocations: 2369)
+  Rendered movements/new.html.erb within layouts/application (Duration: 36.1ms | Allocations: 2870)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.3ms | Allocations: 781)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 321)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 9203)
+Completed 200 OK in 81ms (Views: 67.8ms | ActiveRecord: 1.3ms | Allocations: 13362)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 19:05:58 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 19:06:43 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/movements/_form.html.erb:27
+  Rendered movements/_form.html.erb (Duration: 29.0ms | Allocations: 2024)
+  Rendered movements/new.html.erb within layouts/application (Duration: 31.8ms | Allocations: 2524)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.6ms | Allocations: 781)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 321)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 8860)
+Completed 200 OK in 72ms (Views: 60.6ms | ActiveRecord: 1.1ms | Allocations: 13025)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 19:06:43 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 19:07:12 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/movements/_form.html.erb:25
+  Rendered movements/_form.html.erb (Duration: 28.1ms | Allocations: 1917)
+  Rendered movements/new.html.erb within layouts/application (Duration: 30.7ms | Allocations: 2417)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.1ms | Allocations: 781)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 321)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 8750)
+Completed 200 OK in 74ms (Views: 63.1ms | ActiveRecord: 0.6ms | Allocations: 12888)
+
+
+Started GET "/groups/app/assets/stylesheets/fonts/fonts.css" for ::1 at 2023-09-30 19:07:12 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/groups/app/assets/stylesheets/fonts/fonts.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Regular-webfont.ttf"):
+  
+Started POST "/groups/6/movements" for ::1 at 2023-09-30 19:07:25 -0600
+Processing by MovementsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "movement"=>{"name"=>"asdf", "amount"=>"50"}, "user"=>{"group_id"=>"6"}, "commit"=>"Create Movement", "group_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:30:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mMovement Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "movements" WHERE LOWER("movements"."name") = LOWER($1) AND "movements"."group_id" = $2 LIMIT $3[0m  [["name", "asdf"], ["group_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mMovement Create (1.0ms)[0m  [1m[32mINSERT INTO "movements" ("author_id", "group_id", "name", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["author_id", 1], ["group_id", 6], ["name", "asdf"], ["amount", 50.0], ["created_at", "2023-10-01 01:07:25.707105"], ["updated_at", "2023-10-01 01:07:25.707105"]]
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movements_controller.rb:35:in `block in create'
+Redirected to http://localhost:3000/groups/6
+Completed 302 Found in 31ms (ActiveRecord: 8.5ms | Allocations: 8932)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 19:07:25 -0600
+Processing by GroupsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.8ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 8.5ms | Allocations: 589)
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 23.7ms | Allocations: 2154)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 377)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 7153)
+Completed 200 OK in 61ms (Views: 44.1ms | ActiveRecord: 1.5ms | Allocations: 11890)
+
+
+Started GET "/groups/6/movements/new" for ::1 at 2023-09-30 19:11:31 -0600
+Processing by MovementsController#new as HTML
+  Parameters: {"group_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movements_controller.rb:19:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering movements/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/movements/_form.html.erb:25
+  Rendered movements/_form.html.erb (Duration: 4.0ms | Allocations: 1411)
+  Rendered movements/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1568)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.2ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 6464)
+Completed 200 OK in 29ms (Views: 21.6ms | ActiveRecord: 0.6ms | Allocations: 9891)
+
+
