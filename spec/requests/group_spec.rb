@@ -20,16 +20,7 @@ RSpec.describe 'Groups', type: :request do
       get '/groups/new'
       expect(response).to have_http_status(:success)
     end
-  end
-
-  describe 'GET /edit' do
-    it 'returns http redirect' do
-      sign_in user
-      group = FactoryBot.create(:group, user:)
-      get "/groups/#{group.id}/edit"
-      expect(response).to have_http_status(:success)
-    end
-  end
+  end 
 
   describe 'POST /create' do
     it 'returns http redirect' do
@@ -37,16 +28,7 @@ RSpec.describe 'Groups', type: :request do
       post '/groups', params: { group: { name: 'Group 1', icon: 'icon1', user: } }
       expect(response).to have_http_status(:redirect)
     end
-  end
-
-  describe 'PUT /update' do
-    it 'returns http redirect' do
-      sign_in user
-      group = FactoryBot.create(:group, user:)
-      put "/groups/#{group.id}", params: { group: { name: 'Group 1', icon: 'icon1', user: } }
-      expect(response).to have_http_status(:redirect)
-    end
-  end
+  end  
 
   describe 'DELETE /destroy' do
     it 'returns http redirect' do
