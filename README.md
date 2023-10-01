@@ -190,6 +190,9 @@ If you like this project please give me star! thanks!
 
 I would like to thank microverse for this great coding experience
 
+acknowledgments to Gregoire Vella on Behance which is the autor of the original design
+https://www.behance.net/gregoirevella
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

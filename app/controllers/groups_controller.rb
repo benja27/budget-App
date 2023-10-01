@@ -9,12 +9,10 @@ class GroupsController < ApplicationController
   end
 
   # GET /groups/1 or /groups/1.json
-  def show
-    # if params[:id].to_i
+  def show    
     @group = Group.find(params[:id])
-
-    # else
-    @movements = @group.movements
+    
+    @movements = @group.movements.order('created_at DESC')
     @total_amount = @movements.sum(:amount)
     # end
   end

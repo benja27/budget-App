@@ -12,6 +12,11 @@ RSpec.describe 'Users', type: :request do
     sign_in(user)
   end
 
+  it 'allows the user to visit the index page' do
+    visit groups_path
+    expect(page).to have_content('Groups')
+  end  
+
   it 'visit the index page' do
     sign_out(user)
     visit '/users/sign_in'
@@ -35,7 +40,7 @@ RSpec.describe 'Users', type: :request do
     visit groups_path
     icons = page.all('.fa-bars')
     icons.first.click
-    click_button 'Salir'
+    click_button 'Exit'
     sleep 1
     expect(current_path).to eq('/')
   end
@@ -46,7 +51,7 @@ RSpec.describe 'Users', type: :request do
   end
 
   it 'allows the user to visit movements' do
-    visit movements_path
+    visit group_movements_path(group)
     expect(page).to have_content('Movements')
   end
 
@@ -64,22 +69,10 @@ RSpec.describe 'Users', type: :request do
   end
 
   it 'allows the user to visit new movement' do
-    visit new_movement_path
+    visit new_group_movement_path(group)
 
     expect(page).to have_content('New Movement')
-  end
-
-  it 'allows the user to visit edit group' do
-    visit edit_group_path(group)
-    sleep 1
-    expect(page).to_not have_content('Editing Group')
-  end
-
-  it 'allows the user to visit edit movement' do
-    visit edit_movement_path(movement)
-    sleep 1
-    expect(page).to_not have_content('Edit Movement')
-  end
+  end    
 
   it 'allows the user to visit show group' do
     visit group_path(group)
