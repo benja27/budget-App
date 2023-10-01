@@ -2630,3 +2630,58 @@ Processing by GroupsController#index as HTML
 Completed 200 OK in 184ms (Views: 52.8ms | ActiveRecord: 16.7ms | Allocations: 15473)
 
 
+Started GET "/groups" for ::1 at 2023-09-30 21:10:02 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (2.1ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 23.2ms | Allocations: 6056)
+  Rendered groups/index.html.erb within layouts/application (Duration: 39.5ms | Allocations: 10211)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.1ms | Allocations: 790)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 329)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 141.6ms | Allocations: 54477)
+Completed 200 OK in 738ms (Views: 147.1ms | ActiveRecord: 16.5ms | Allocations: 363649)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 21:13:48 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.4ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 4.0ms | Allocations: 1535)
+  Rendered groups/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2694)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.6ms | Allocations: 773)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 320)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 8998)
+Completed 200 OK in 69ms (Views: 58.4ms | ActiveRecord: 1.1ms | Allocations: 12494)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 21:14:54 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.5ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 18.3ms | Allocations: 1535)
+  Rendered groups/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 2693)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.5ms | Allocations: 773)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 320)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 65.0ms | Allocations: 9053)
+Completed 200 OK in 84ms (Views: 73.1ms | ActiveRecord: 1.2ms | Allocations: 12535)
+
+
