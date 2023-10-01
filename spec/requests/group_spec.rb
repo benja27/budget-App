@@ -20,7 +20,7 @@ RSpec.describe 'Groups', type: :request do
       get '/groups/new'
       expect(response).to have_http_status(:success)
     end
-  end 
+  end
 
   describe 'POST /create' do
     it 'returns http redirect' do
@@ -28,7 +28,7 @@ RSpec.describe 'Groups', type: :request do
       post '/groups', params: { group: { name: 'Group 1', icon: 'icon1', user: } }
       expect(response).to have_http_status(:redirect)
     end
-  end  
+  end
 
   describe 'DELETE /destroy' do
     it 'returns http redirect' do
