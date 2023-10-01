@@ -1653,3 +1653,125 @@ Processing by MovementsController#new as HTML
 Completed 200 OK in 29ms (Views: 21.6ms | ActiveRecord: 0.6ms | Allocations: 9891)
 
 
+Started GET "/groups/6" for ::1 at 2023-09-30 19:59:56 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (2.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (3.9ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (2.6ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 3.0ms | Allocations: 635)
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 17.4ms | Allocations: 4231)
+  Rendered shared/_sideMenu.html.erb (Duration: 1.7ms | Allocations: 788)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 322)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 110.8ms | Allocations: 28552)
+Completed 200 OK in 380ms (Views: 120.5ms | ActiveRecord: 80.3ms | Allocations: 45255)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 19:59:59 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.4ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.5ms | Allocations: 281)
+  Rendered movements/_movement.html.erb (Duration: 12.3ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 16.3ms | Allocations: 1424)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.6ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 6329)
+Completed 200 OK in 51ms (Views: 33.9ms | ActiveRecord: 1.5ms | Allocations: 10626)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 20:00:05 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.4ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 17.3ms | Allocations: 1535)
+  Rendered groups/index.html.erb within layouts/application (Duration: 26.9ms | Allocations: 2756)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | Allocations: 7656)
+Completed 200 OK in 54ms (Views: 43.6ms | ActiveRecord: 1.0ms | Allocations: 10445)
+
+
+Started GET "/groups/6" for ::1 at 2023-09-30 20:00:08 -0600
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:73:in `set_group'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:13:in `show'
+  [1m[36mMovement Sum (0.3ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/controllers/groups_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 6]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered movements/_movement.html.erb (Duration: 0.9ms | Allocations: 281)
+  Rendered movements/_movement.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered groups/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1424)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.5ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 6288)
+Completed 200 OK in 41ms (Views: 22.5ms | ActiveRecord: 2.3ms | Allocations: 10613)
+
+
+Started GET "/groups" for ::1 at 2023-09-30 20:00:11 -0600
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:11
+  [1m[36mMovement Sum (0.4ms)[0m  [1m[34mSELECT SUM("movements"."amount") FROM "movements" WHERE "movements"."group_id" = $1[0m  [["group_id", 6]]
+  ↳ app/views/groups/_group.html.erb:26
+  Rendered groups/_group.html.erb (Duration: 3.8ms | Allocations: 1108)
+  Rendered groups/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1896)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 353)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 6756)
+Completed 200 OK in 30ms (Views: 22.1ms | ActiveRecord: 1.1ms | Allocations: 9459)
+
+
+Started GET "/groups/new" for ::1 at 2023-09-30 20:00:12 -0600
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 6.6ms | Allocations: 1478)
+  Rendered groups/new.html.erb within layouts/application (Duration: 21.4ms | Allocations: 3538)
+  Rendered shared/_sideMenu.html.erb (Duration: 0.4ms | Allocations: 362)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 8129)
+Completed 200 OK in 44ms (Views: 36.2ms | ActiveRecord: 0.3ms | Allocations: 10855)
+
+

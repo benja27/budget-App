@@ -15,7 +15,7 @@ RSpec.describe 'Users', type: :request do
   it 'allows the user to visit the index page' do
     visit groups_path
     expect(page).to have_content('Groups')
-  end  
+  end
 
   it 'visit the index page' do
     sign_out(user)
@@ -72,7 +72,7 @@ RSpec.describe 'Users', type: :request do
     visit new_group_movement_path(group)
 
     expect(page).to have_content('New Movement')
-  end    
+  end
 
   it 'allows the user to visit show group' do
     visit group_path(group)
