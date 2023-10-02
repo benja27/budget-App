@@ -13,18 +13,20 @@
 
   <div class='mb-3' >    
     <%= form.text_field :name, placeholder: "transaction name", class: "w-100 form-control" %>
-  </div>
-
-  
+  </div>  
 
   <div class='mb-3' >    
     <%= form.number_field :amount, placeholder: "Amount", class: "w-100 form-control"  %>
   </div>
 
-  
-    <%= form.hidden_field :group_id, value: params[:id] %> 
-    
-  
+  <div class='mb-3' >
+  <%= form.label :group_id %>
+  <select name="user[group_id]" class="w-100 flex-grow-1 form-select form-select-lg">
+    <% @groups.each do |group| %>
+      <option value="<%= group.id %>"><%= group.name %></option>
+    <% end %>
+  </select>
+</div>  
 
   <div class='mb-3' >
     <%= form.submit class: "bg-success text-white w-100 h3 py-2 rounded border border-0" %>
